@@ -1,0 +1,63 @@
+name: ProfessionalBansReloaded
+author: Tutorialwork
+version: 3.0
+main: de.tutorialwork.professionalbans.main.Main
+
+commands:
+  ban:
+    description: Punish an user for a defined reason and time
+    aliases:
+      - mute
+  unban:
+    description: Remove punish from user
+    aliases:
+      - unmute
+  kick:
+    description: Kick player from server with reason
+  check:
+    description: See current status of player
+  professionalbans:
+    description: See informations about the developer
+  ipban:
+    description: Punish player with his IPv4 address
+  report:
+    description: Report a player
+  reports:
+    description: See all open reports
+  chatlog:
+    description: Log all written messages by an player
+  blacklist:
+    description: Manage blocked words by the chatfilter
+  webverify:
+    description: Reset your webinterface password
+  support:
+    description: Start a new supportchat
+  msg:
+    description: Send a private message
+  r:
+    description: Reply to a private message
+  tc:
+    description: Write in the teamchat
+    aliases:
+      - teamchat
+      - team
+  bc:
+    description: Send a global server message
+    aliases:
+      - broadcast
+  history:
+    description: See previous punishments from a player
+    aliases:
+      - verlauf
+  onlinezeit:
+    description: See the onlinetime from players or the leaderboard
+    aliases:
+      - onlinetime
+      - onzeit
+      - ontime
+  language:
+    description: Select a plugin language
+    aliases:
+      - sprache
+  msgtoggle:
+    description: Disable private messages

@@ -4,6 +4,7 @@ import de.tutorialwork.professionalbans.commands.*;
 import de.tutorialwork.professionalbans.listener.Chat;
 import de.tutorialwork.professionalbans.listener.Login;
 import de.tutorialwork.professionalbans.listener.Quit;
+import de.tutorialwork.professionalbans.utils.Placeholders;
 import de.tutorialwork.professionalbans.utils.*;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -58,6 +59,7 @@ public class Main extends JavaPlugin {
         Commands();
         Listener();
         Schedulers();
+        Placeholders();
 
         if(Language.getLanguage().equals("de")){
             Language.initLanguage(locale_de);
@@ -305,6 +307,13 @@ public class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new Login(), this);
         Bukkit.getPluginManager().registerEvents(new Chat(), this);
         Bukkit.getPluginManager().registerEvents(new Quit(), this);
+    }
+
+    private void Placeholders() {
+        if(Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null){
+            Bukkit.getConsoleSender().sendMessage(data.Prefix + "§aPlaceholderAPI found!");
+            new Placeholders(this).register();
+        }
     }
 
     public static Main getInstance(){

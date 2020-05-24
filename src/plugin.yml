@@ -2,6 +2,7 @@ name: ProfessionalBansReloaded
 author: Tutorialwork
 version: 3.0
 main: de.tutorialwork.professionalbans.main.Main
+oftdepend: [PlaceholderAPI]
 
 commands:
   ban:

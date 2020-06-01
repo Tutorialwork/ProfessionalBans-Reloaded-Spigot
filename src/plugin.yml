@@ -1,6 +1,6 @@
 name: ProfessionalBansReloaded
 author: Tutorialwork
-version: 3.0
+version: 3.0.1
 main: de.tutorialwork.professionalbans.main.Main
 oftdepend: [PlaceholderAPI]
 

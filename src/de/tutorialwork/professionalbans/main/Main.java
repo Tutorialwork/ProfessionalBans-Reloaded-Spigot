@@ -31,7 +31,7 @@ public class Main extends JavaPlugin {
 
     //==============================================
     //Plugin Informationen
-    public static final String Version = "3.0";
+    public static final String Version = "3.0.1";
     //==============================================
 
     @Override

@@ -290,6 +290,7 @@ public class Main extends JavaPlugin {
         if(cfg.getBoolean("COMMANDS.MSG")){
             getCommand("msg").setExecutor(new PrivateMessage());
             getCommand("r").setExecutor(new PrivateMessageReply());
+            getCommand("msgtoggle").setExecutor(new MSGToggle());
         }
         if(cfg.getBoolean("COMMANDS.TEAMCHAT")){
             getCommand("tc").setExecutor(new TeamChat());
@@ -300,7 +301,6 @@ public class Main extends JavaPlugin {
         getCommand("history").setExecutor(new PlayerHistory());
         getCommand("onlinezeit").setExecutor(new Onlinezeit());
         getCommand("language").setExecutor(new Language());
-        getCommand("msgtoggle").setExecutor(new MSGToggle());
     }
 
     private void Listener() {

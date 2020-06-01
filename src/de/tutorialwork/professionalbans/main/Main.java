@@ -263,7 +263,11 @@ public class Main extends JavaPlugin {
             MySQLConnect.PORT = 3306;
         }
         mysql = new MySQLConnect(MySQLConnect.HOST, MySQLConnect.DATABASE, MySQLConnect.USER, MySQLConnect.PASSWORD, MySQLConnect.PORT);
-        data.seedDatabase();
+        if(data.checkMySQLVersion()){
+            data.seedDatabase();
+        } else {
+            Bukkit.getConsoleSender().sendMessage(Main.data.Prefix+Main.messages.getString("outdated_mysql"));
+        }
     }
 
     private void Commands() {
